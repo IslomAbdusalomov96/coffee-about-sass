@@ -1,0 +1,26 @@
+.commitment {
+    padding-bottom: 168px;
+    &__container {
+        padding: 90px 90px;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url("../images/commitment-img.jpg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 445px 520px;
+    }
+    &__title {
+        margin-bottom: 32px;
+        color: $text-color;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    &__desc {
+        width: 540px;
+        color: $text-color;
+        font-family: 'Barlow';
+        line-height: 26px;
+        opacity: 0.8;
+    }
+}

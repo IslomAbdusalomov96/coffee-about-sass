@@ -1,0 +1,53 @@
+.headquarters {
+    padding-bottom: 168px;
+    &__container {
+        max-width: 1085px;
+    }
+    &__title {
+        margin-bottom: 72px;
+        color: $link-color;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 285px;
+    }
+    &__item::before {
+        content: "";
+        margin-bottom: 46px;
+        width: 41px;
+        height: 49px;
+        background-image: url("../images/map-of-great-britain.png");
+        background-repeat: no-repeat;
+    }
+    &__item:nth-child(2)::before {
+        margin-bottom: 45px;
+        width: 52px;
+        height: 50px;
+        background-image: url("../images/canada-map.png");
+    }
+    &__item:last-child::before {
+        margin-bottom: 48px;
+        width: 49px;
+        height: 44px;
+        background-image: url("../images/canada-map.png");
+    }
+    &__item-title {
+        margin-bottom: 24px;
+        color: $text-color;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    &__item-link {
+        color: $text-color;
+        font-family: 'Barlow';
+        line-height: 26px;
+    }
+}
